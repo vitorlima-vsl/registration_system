@@ -3,5 +3,9 @@ main{
 }
 footer{
     height: 4%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 

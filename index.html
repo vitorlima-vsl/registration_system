@@ -14,25 +14,29 @@
 
     <h1 class="font-mono text-center text-xl font-bold text-gray-600 mt-12">login</h1>
 
-<div class="mx-auto gap-1  h-36 w-72 grid grid-cols-1 grid-rows-2 bg-black-400">
-    <input class="mt-2 rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="email"/>
-    <input type="password" class="mt-2 rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="password"/>
-    <a href="" class="hover:inline font-mono font-bold text-blue-500 hover:text-blue-400 text-sm text-end">forgot your password?</a>
+<div class="mx-auto h-48 w-72 flex flex-col bg-black-400">
+
+    <label for="email" class="mt-2 font-medium text-lg font-bold text-gray-500">email</label>
+    <input id="email" class=" rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="email"/>
+
+    <label for="password" class="mt-2 font-medium text-lg font-bold text-gray-500">password</label>
+    <input id="password" type="password" class="rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="password"/>
+    <a href="" class="hover:inline font-mono font-bold text-blue-500 hover:text-blue-700 text-sm text-end">forgot your password?</a>
 </div>
 
-<button class="text-lg text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-500 to-sky-600 w-72 h-9 mx-auto my-6
-rounded-bl-xl hover:shadow-xl  focus:outline-none  focus:ring-1 focus:ring-sky-500">login</button>
+<button class="text-lg rounded-tr-xl text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-500 to-sky-600 w-72 h-9 mx-auto mt-12 mb-6
+rounded-bl-xl hover:shadow-xl  focus:shadow-xl   focus:border-sky-600 border-2 border-sky-400 ">login</button>
 
-<h2 class="font-mono text-center text-xl font-medium text-gray-600 ">or</h2>
+<h2 class="font-mono text-center text-xl font-medium text-gray-600">or</h2>
 
 
-<button class="text-lg text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-500 to-sky-600 w-72 h-9 mx-auto my-6 mb-32
-rounded-bl-xl hover:shadow-xl  focus:outline-none  focus:ring-1 focus:ring-sky-500">sign-up</button>
+<button class="text-lg text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-500 to-sky-600 w-72 h-9 mx-auto mt-6
+rounded-bl-xl rounded-tr-xl  hover:shadow-xl  focus:shadow-xl focus:border-sky-600 border-2 border-sky-400">sign-up</button>
 </main>
      
     <footer class=" bg-gray-950 text-blue-50 text-center">
       <p> 
-        © 2024 <a href="#" class="underline">WanderleyLima</a>. All Rights Reserved.</p>
+        © <script>document.write(new Date().getFullYear())</script> <a href="#" class="underline">WanderleyLima</a>. All Rights Reserved.</p>
     </footer>
 
 </body>
