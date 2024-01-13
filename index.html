@@ -7,32 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-neutral-100">
-    <div class="flex justify-center h-32  bg-gradient-to-r from-blue-500 from-0% to-blue-600 to-100%" >
-        <h1 class="font-mono text-blue-50 mt-12 text-2xl">login</h1>
-    </div>
+<body  class="bg-gray-100">
+
       <!-- blue-500 = #3b82f6 ; blue-600 = #2563eb ;  -->
-    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320">
-        <defs>
-          <linearGradient id="horizontalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color: #3b82f6; stop-opacity: 1" />
-            <stop offset="100%" style="stop-color: #2563eb; stop-opacity: 1" />
-          </linearGradient>
-        </defs>
-        <path fill="url(#horizontalGradient)" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,160C640,149,800,75,960,37.3C1120,0,1280,0,1360,0L1440,0L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-      </svg>
-    
-    <h1>sign in to your account</h1>
 
-    <div class="mx-auto mt-32 gap-1  h-32 w-64 grid grid-cols-1 grid-rows-2 bg-black-400">
-        <input class="rounded-bl-xl outline-blue-500 placeholder:font-mono p-2" placeholder="email"/>
-        <input type="password" class="rounded-bl-xl outline-blue-500 placeholder:font-mono p-2" placeholder="senha"/>
-        <div class="flex justify-end">
-            <a href="" class="hover:inline font-mono text-blue-400/75 hover:text-blue-600 text-sm">esqueceu a senha?</a>
-        </div>  
+
+        <h1 class="font-mono text-center text-xl font-bold text-gray-600 mt-64">login</h1>
+
+    <div class="mx-auto gap-1  h-36 w-72 grid grid-cols-1 grid-rows-2 bg-black-400">
+        <input class="mt-2 rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="email"/>
+        <input type="password" class="mt-2 rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="senha"/>
+       
+          <a href="" class="hover:inline font-mono font-bold text-blue-500 hover:text-blue-400 text-sm text-end">esqueceu a senha?</a>
+
     </div>
 
-    <button class="flex justify-center items-center bg-gradient-to-r from-blue-500 to-blue-600 w-64 h-8 mx-auto my-12 rounded-bl-xl text-blue-100 hover:bg-blue-600">login</button>
+    <button class="text-lg font-mono font-medium mt-64shadow-md flex justify-center items-center bg-gradient-to-r from-sky-300 to-sky-500 w-72 h-9 mx-auto my-12
+    rounded-bl-xl hover:shadow-xl  focus:outline-none  focus:ring-1 focus:ring-sky-500">login</button>
 
 </body>
 </html>
