@@ -1,2 +1,2 @@
-# login_screen
-criando uma tela de login utilizando tailwind
+# registration_system
+criando um sistema de cadastro utilizando tailwind, javascript, php e sql - em andamento
