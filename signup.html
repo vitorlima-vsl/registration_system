@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body >
-  <main class="flex flex-col"> 
+
+<body>
+  <main class="flex flex-col justify-center ">
     <!-- blue-500 = #3b82f6 ; blue-600 = #2563eb ;  -->
-   
-    <div class="mt-4 sm:mt-8 ">
-      <h1 class="text-xl text-center font-bold">essa é uma tela de cadastro</h1>
+    <div class="bg-white shadow rounded">
+      <form action="signup.php" method="post" novalidate
+      class="mx-auto w-full sm:w-72 p-5 flex flex-col bg-black-400 mt-9">
+      <h1 class="mt-4 sm:mt-8  text-xl text-center font-bold">essa é uma tela de cadastro</h1>
       <h1 class="text-center text-xl font-bold text-gray-600">crie sua conta</h1>
+      <label for="name" class="mt-2 font-medium text-lg font-bold text-gray-500">nome</label>
+      <input id="name" name="name"
+        class=" rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg"
+        placeholder="nome" />
+
+      <label for="email" class="mt-2 font-medium text-lg font-bold text-gray-500">email</label>
+      <input id="email" name="email"
+        class="rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg"
+        placeholder="email" />
+
+      <label for="password" class="mt-2 font-medium text-lg font-bold text-gray-500">senha</label>
+      <input id="password" type="password" name="password"
+        class=" rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg"
+        placeholder="senha" />
+
+      <label for="confirm_password" class="mt-2 font-medium text-lg font-bold text-gray-500">confirme a senha</label>
+      <input id="confirm_password" type="password" name="confirm_password"
+        class="rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg"
+        placeholder="confirme a senha" />
+      <button
+        class="text-xl rounded-tr-xl text-blue-50 font-bold font-medium shadow-md  bg-gradient-to-r from-sky-500 to-sky-600 mt-8 mb-6 
+            rounded-bl-xl hover:shadow-xl focus:shadow-xl focus:border-sky-600 border-2 border-sky-400 ">cadastre-se</button>
+
+      <p class="text-center font-medium"> ou cadastre-se com</p>
+
+      <div class="flex flex-col-2 " style="justify-content: space-around;">
+        <button class="text-lg rounded-tr-xl text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-500 to-sky-600 w-32 h-9 mx-auto  mb-6
+            rounded-bl-xl hover:shadow-xl  focus:shadow-xl   focus:border-sky-600 border-2 border-sky-400 "><i
+            class="fa-brands fa-google-plus-g"></i></button>
+        <button class="text-lg rounded-tr-xl text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-500 to-sky-600 w-32 h-9 mx-auto  mb-6
+            rounded-bl-xl hover:shadow-xl  focus:shadow-xl   focus:border-sky-600 border-2 border-sky-400 "><i
+            class="fa-brands fa-facebook-f"></i></i></button>
+      </div>
+
+
+      <p class="text-center font-medium text-base mb-10">já tem uma conta? <a href="index.html"
+          class="text-blue-500 hover:text-blue-700 font-medium text-base">entrar</a></p>
+
+    </form>
     </div>
+  </main>
+
+  <footer class=" bg-gray-950 text-blue-50 text-center text-base">
+    <p>
+      ©
+      <script>document.write(new Date().getFullYear())</script> <a href="#" class="underline">WanderleyLima</a>. All
+      Rights Reserved.
+    </p>
+  </footer>
 
 
-        <form action="signup.php" method="post" novalidate class="mx-auto w-full sm:w-72 sm:h-48 px-5 flex flex-col bg-black-400 mt-9">
-          <label for="name" class="mt-2 font-medium text-lg font-bold text-gray-500">nome</label>
-          <input id="name" name="name" class=" rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="nome"/>
-      
-          <label for="email" class="mt-2 font-medium text-lg font-bold text-gray-500">email</label>
-          <input id="email" name="email" class="rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="email"/>
-          
-          <label for="password" class="mt-2 font-medium text-lg font-bold text-gray-500">senha</label>
-          <input id="password" type="password" name="password" class=" rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="senha"/>
-      
-          <label for="confirm_password" class="mt-2 font-medium text-lg font-bold text-gray-500">confirme a senha</label>
-          <input id="confirm_password" type="password" name="confirm_password" class="rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-400 hover:shadow-lg" placeholder="confirme a senha"/>
-        </form>
-      
-  
 
-
-    <div class=" mx-auto w-full sm:w-72 sm:h-48 px-5 flex flex-col bg-black-400 mt-2">
-      <button class=" text-xl rounded-tr-xl text-blue-50 font-bold font-medium shadow-md  bg-gradient-to-r from-sky-500 to-sky-600 mt-8 mb-6 
-      rounded-bl-xl hover:shadow-xl focus:shadow-xl focus:border-sky-600 border-2 border-sky-400 ">cadastre-se</button>
-      
-    <p class="text-center font-medium"> ou cadastre-se com</p>
-    </div>
-    <div class="container flex flex-row gap-x-2 mx-auto sm:w-64 mt-4 ">
-      <button class="text-lg rounded-tr-xl text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-500 to-sky-600 w-32 h-9 mx-auto  mb-6
-rounded-bl-xl hover:shadow-xl  focus:shadow-xl   focus:border-sky-600 border-2 border-sky-400 "><i
-          class="fa-brands fa-google-plus-g"></i></button>
-      <button class="text-lg rounded-tr-xl text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-500 to-sky-600 w-32 h-9 mx-auto  mb-6
-rounded-bl-xl hover:shadow-xl  focus:shadow-xl   focus:border-sky-600 border-2 border-sky-400 "><i
-          class="fa-brands fa-facebook-f"></i></i></button>
-    </div>
-
-    <div class="mb-10">
-      <p class="text-center font-medium text-base">já tem uma conta? <a href="index.html" class="text-blue-500 hover:text-blue-700 font-medium text-base">entrar</a></p>
-    </div>
-    
-
-
-</main>
-     
-    <footer class=" bg-gray-950 text-blue-50 text-center text-base">
-      <p> 
-        © <script>document.write(new Date().getFullYear())</script> <a href="#" class="underline">WanderleyLima</a>. All Rights Reserved.</p>
-    </footer>
-
-
-    
 </body>
+
 </html>
