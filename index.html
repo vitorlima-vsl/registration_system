@@ -14,9 +14,49 @@
 </head>
 
 <body class="">
-  <main class="flex flex-col">
+  <main class="flex flex-col bg-gray-50">
     <!-- blue-500 = #3b82f6 ; blue-600 = #2563eb ;  -->
-    <div class="mt-4 sm:mt-8 ">
+    
+    <!-- codigo 2 -->
+<div class="flex flex-col bg-white shadow mx-auto w-full min-[320px]:w-72 p-6 bg-black-400 mt-9">
+  <form action="login.php" method="post" novalidate class="flex flex-col">
+    <h1 class="roboto-mono-500 mt-4 sm:mt-8 text-xl text-center font-bold">essa é uma tela de login</h1>
+    <h1 class="roboto-mono-500 text-center text-xl font-bold text-gray-600">entre com sua conta</h1>
+
+    <label for="email" class="mt-2  text-lg roboto-mono-500  font-bold text-gray-500">email</label>
+    <input id="email"
+      class="rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-500 hover:shadow-lg"
+      placeholder="email" />
+
+    <label for="password" class="mt-2 roboto-mono-300 text-lg font-bold text-gray-500">senha</label>
+    <input id="password" type="password"
+      class="rounded-bl-xl outline-sky-600 placeholder:font-mono p-2 border-2 border-sky-500 hover:shadow-lg"
+      placeholder="senha" />
+    <a href="" class="hover:inline roboto-mono-300 font-bold text-blue-500 hover:text-blue-700 text-sm text-end">esqueceu a
+      senha?</a>
+
+    <button class="text-lg rounded-tr-xl text-blue-50 font-mono roboto-mono-300 font-medium shadow-md bg-gradient-to-r from-sky-600 to-sky-700 mt-8 mb-6 
+    rounded-bl-xl hover:shadow-xl focus:shadow-xl focus:border-sky-600 border-2 border-sky-400 ">login</button>
+
+    <p class="roboto-mono-300 text-center font-bold"> ou entre com</p>
+
+    <div class="container flex flex-row gap-x-2 mx-auto sm:w-64 mt-4 ">
+      <button class="text-lg rounded-tr-xl text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-600 to-sky-700 w-32 h-9 mx-auto  mb-6
+  rounded-bl-xl hover:shadow-xl  focus:shadow-xl   focus:border-sky-600 border-2 border-sky-400 "><i
+          class="fa-brands fa-google-plus-g"></i></button>
+      <button class="text-lg rounded-tr-xl text-blue-50 font-mono font-medium shadow-md flex justify-center items-center bg-gradient-to-r from-sky-600 to-sky-700 w-32 h-9 mx-auto  mb-6
+  rounded-bl-xl hover:shadow-xl  focus:shadow-xl   focus:border-sky-600 border-2 border-sky-400 "><i
+          class="fa-brands fa-facebook-f"></i></i></button>
+    </div>
+
+    <p class="text-center mt-8 font-bold text-base roboto-mono-300">não tem uma conta? <a href="signup.html"
+        class="text-blue-500 hover:text-blue-700 roboto-mono-300 font-bold text-base">criar conta</a></p>
+  </form>
+</div>
+    
+    
+    <!-- codigo 2 // revisar isso aqui melhor depois, pq to com preguiça e tela ruim agora -->
+    <!-- <div class="mt-4 sm:mt-8 ">
       <h1 class="text-xl text-center font-bold">essa é uma tela de login</h1>
 
       <h1 class="text-center text-xl font-bold text-gray-600">entre com sua conta</h1>
@@ -56,7 +96,7 @@ rounded-bl-xl hover:shadow-xl  focus:shadow-xl   focus:border-sky-600 border-2 b
 
       <p class="text-center mt-8 font-medium text-base">não tem uma conta? <a href="signup.html"
           class="text-blue-500 hover:text-blue-700 font-medium text-base">criar conta</a></p>
-    </div>
+    </div> -->
 
 
 
